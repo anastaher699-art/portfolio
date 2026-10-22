@@ -223,29 +223,30 @@ nav a:hover, nav a.active {
 }
 
 /* ==========================================
-   Responsive Styles (للموبايل والشاشات الصغيرة)
+   Responsive Styles (اسمك شمال والروابط يمين)
    ========================================== */
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 18px 5%;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 4%;
     }
 
     .logo {
-        font-size: 24px;
+        font-size: 17px;
+        white-space: nowrap;
     }
 
     nav ul {
-        gap: 12px;
+        gap: 8px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     nav a {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .hero, .page-content {
@@ -253,10 +254,10 @@ nav a:hover, nav a.active {
     }
 
     .hero h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .hero p {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
